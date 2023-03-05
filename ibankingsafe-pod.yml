@@ -6,6 +6,13 @@ spec:
   containers:
     - name: ibankingsafe
       image: snahaiare/ibankingsafe:1.0
+      resources:
+        requests:
+          cpu: "1"
+          memory: 512Mi
+        limits:
+          cpu: "1"
+          memory: 1024Mi
       ports:
         - name: tomcatport
           containerPort: 8082
