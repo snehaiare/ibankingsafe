@@ -4,7 +4,7 @@ metadata:
   name: ibankingsafepod
 spec:
   containers:
-    - name: ibankingsafe
+    - name: ibankingsafecontainer
       image: snehaiare/ibankingsafe:1.0
       resources:
         requests:
@@ -33,7 +33,7 @@ spec:
         failureThreshold: 3
       env:
         - name: "db.username"
-          valueFrom: 
+          valueFrom:
             secretKeyRef:
               name: ibankingsafesecret
               key: username
