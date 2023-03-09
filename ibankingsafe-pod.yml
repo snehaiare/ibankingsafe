@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
     - name: ibankingsafecontainer
-      image: snehaiare/ibankingsafe:1.0
+      image: snehaiare/ibankingsafe:2.0
       resources:
         requests:
           cpu: "1"
